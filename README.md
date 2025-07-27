@@ -1,2 +1,2 @@
-# transnetwork-api-tests
-Demo for transnetwork API Tests
+# tn-api-branching-demo
+Demo for branching and API Tests for multiple teams with Postman
