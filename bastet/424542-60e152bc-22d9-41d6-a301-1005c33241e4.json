@@ -133,13 +133,53 @@
 						},
 						{
 							"name": "GET Session Status | Auth",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8dd28249-0c31-452a-8f38-e1922800cdef",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test(\"User ID is 2\", function () {",
+											"    const jsonData = pm.response.json();",
+											"    pm.expect(jsonData.data.id).to.eql(2);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
 							"id": "424542-18790a27-c431-4ffd-8f10-a2772dfa3e3d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "reqres-free-v1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://reqres.in/api/users/2",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"users",
+										"2"
+									]
+								}
 							},
 							"response": []
 						}
