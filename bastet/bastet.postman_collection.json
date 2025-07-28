@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "aa051122-c0ed-4306-92e2-7015012bc826",
+		"_postman_id": "63d2a88d-ffa5-4056-a187-1859ce179871",
 		"name": "TN",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "424542",
-		"_collection_link": "https://solar-zodiac-233829.postman.co/workspace/videate~06f6ff97-a468-494b-be48-c8e6aee87d11/collection/424542-aa051122-c0ed-4306-92e2-7015012bc826?action=share&source=collection_link&creator=424542"
+		"_collection_link": "https://solar-zodiac-233829.postman.co/workspace/Team-Workspace~ed4dec93-2f59-4c09-8457-566ea8fbeaaa/collection/424542-63d2a88d-ffa5-4056-a187-1859ce179871?action=share&source=collection_link&creator=424542"
 	},
 	"item": [
 		{
@@ -20,7 +20,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200 and OK. A new hope\", function () {",
+											"pm.test(\"Status code is 200 and OK. Empire strikes back\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
 											""
