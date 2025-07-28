@@ -13,22 +13,21 @@
 					"item": [
 						{
 							"name": "GET User Pagination (edit 1) | ReqRes",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"exec": [
-											"pm.test(\"Status code is 200 and OK. Fight Club\", function () {",
-											"    pm.response.to.have.status(200);",
-											"});",
-											""
-										],
-										"type": "text/javascript",
-										"packages": {},
-										"id": "fe37b6f4-35d1-42ba-99de-8adc33b9ef07"
-									}
-								}
-							],
+						"event": [
+  {
+    "listen": "test",
+    "script": {
+      "exec": [
+        "pm.test(\"Status code is 200 and OK. Top Gun\", function () {",
+        "    pm.response.to.have.status(200);",
+        "});"
+      ],
+      "type": "text/javascript",
+      "packages": {}
+    }
+  }
+]
+
 							"id": "424542-fc0f6808-2902-4bf5-b65d-2da8d9e5a837",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
