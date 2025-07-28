@@ -12,7 +12,7 @@
 					"name": "Bastet (Users)",
 					"item": [
 						{
-							"name": "GET User Pagination | ReqRes",
+							"name": "GET User Pagination (edit 1) | ReqRes",
 							"id": "424542-1656cc2a-2a50-41b6-a1c3-0b5eef604742",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
