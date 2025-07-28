@@ -17,15 +17,15 @@
 								{
 									"listen": "test",
 									"script": {
+										"id": "a0a79d8a-9cda-4e4d-bcd6-ae3d2069f7d0",
 										"exec": [
-											"pm.test(\"Status code is 200 and OK. Fight Club\", function () {",
+											"pm.test(\"Status code is 200 and OK. Top Gun\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "a0a79d8a-9cda-4e4d-bcd6-ae3d2069f7d0"
+										"packages": {}
 									}
 								}
 							],
