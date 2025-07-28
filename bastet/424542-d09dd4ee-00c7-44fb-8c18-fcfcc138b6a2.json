@@ -19,7 +19,9 @@
 									"script": {
 										"id": "b0292493-9165-47a8-8d90-4cdc0fb35c73",
 										"exec": [
+
 											"pm.test(\"Status code is 200 and OK. Fight Club\", function () {",
+
 											"    pm.response.to.have.status(200);",
 											"});",
 											""
