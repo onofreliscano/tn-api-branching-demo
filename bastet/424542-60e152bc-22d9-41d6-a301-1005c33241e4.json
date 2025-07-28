@@ -13,6 +13,22 @@
 					"item": [
 						{
 							"name": "GET User Pagination (edit 1) | ReqRes",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "11b09913-2521-4c48-b90e-391fba9096f5",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
 							"id": "424542-1656cc2a-2a50-41b6-a1c3-0b5eef604742",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
