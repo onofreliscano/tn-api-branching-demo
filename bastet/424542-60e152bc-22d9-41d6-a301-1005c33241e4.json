@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "424542-60e152bc-22d9-41d6-a301-1005c33241e4",
+		"name": "TN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tn-api-branching-demo",
+			"item": [
+				{
+					"name": "Ra (Core/Auth)",
+					"item": [
+						{
+							"name": "POST Login | Dummy",
+							"id": "424542-89063d89-b845-49fa-82be-ed89116d89aa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "reqres-free-v1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"eve.holt@reqres.in\",\n  \"password\": \"cityslicka\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://reqres.in/api/login",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Session Status | Auth",
+							"id": "424542-18790a27-c431-4ffd-8f10-a2772dfa3e3d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "424542-5e3d9d22-e444-4a09-be72-20dca8a0a1b3"
+				},
+				{
+					"name": "Thoth (Reports)",
+					"item": [
+						{
+							"name": "GET All posts | JSONPlaceholder",
+							"id": "424542-c13a54cd-b207-440b-9266-034e18314f2c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://jsonplaceholder.typicode.com/posts",
+									"protocol": "https",
+									"host": [
+										"jsonplaceholder",
+										"typicode",
+										"com"
+									],
+									"path": [
+										"posts"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "424542-17a40a30-a85f-4e2f-8de9-cbc3362f1d99"
+				},
+				{
+					"name": "Bastet (Users)",
+					"item": [
+						{
+							"name": "GET User Pagination | ReqRes",
+							"id": "424542-1656cc2a-2a50-41b6-a1c3-0b5eef604742",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://reqres.in/api/users?page=2",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "424542-782d124c-ce05-4b07-b9e2-18ea5daf4f63"
+				},
+				{
+					"name": "Osiris (External Integrations)",
+					"item": [
+						{
+							"name": "GET External Setup | httpbin",
+							"id": "424542-e4176dd1-c591-47ac-8fb9-c2ffda4e2775",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://httpbin.org/get",
+									"protocol": "https",
+									"host": [
+										"httpbin",
+										"org"
+									],
+									"path": [
+										"get"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "424542-1620d3c0-ba31-43d9-aa95-84a96156eee5"
+				}
+			],
+			"id": "424542-60cdd79f-180d-4385-b370-30fcbf343bb2"
+		}
+	]
+}
