@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "424542-aaffceff-2231-4c6e-8b7b-bf98c0b1ee89",
+		"name": "TN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tn-api-branching-demo",
+			"item": [
+				{
+					"name": "Bastet (Users)",
+					"item": [
+						{
+							"name": "GET User Pagination (edit 1) | ReqRes",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200 and OK. Fight Club\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"id": "e48fb558-063e-4cab-a95d-2c83c7ad4ee4"
+									}
+								}
+							],
+							"id": "424542-c10eb153-37f8-47ad-989e-834b186c8d0f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://reqres.in/api/users?page=2",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								},
+								"description": "a new change\nbranch: bastet-onofre-1"
+							},
+							"response": []
+						}
+					],
+					"id": "424542-0bda8b4e-6f9a-4244-a241-93efc601962c"
+				},
+				{
+					"name": "Osiris (External Integrations)",
+					"item": [
+						{
+							"name": "GET External Setup | httpbin",
+							"id": "424542-593fd501-8ec8-4730-bcf6-82ed9bb73869",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://httpbin.org/get",
+									"protocol": "https",
+									"host": [
+										"httpbin",
+										"org"
+									],
+									"path": [
+										"get"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "424542-a1f869b3-df45-49e9-a55d-07db92bf9fbe"
+				},
+				{
+					"name": "Ra (Core/Auth)",
+					"item": [
+						{
+							"name": "POST Login | Dummy",
+							"id": "424542-2ee0c49d-316b-4c8e-8b68-6a10e39d5354",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "reqres-free-v1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"eve.holt@reqres.in\",\n  \"password\": \"cityslicka\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://reqres.in/api/login",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Session Status | Auth",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {",
+											"    pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test(\"User ID is 2\", function () {",
+											"    const jsonData = pm.response.json();",
+											"    pm.expect(jsonData.data.id).to.eql(2);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"id": "88db8346-8143-4c6d-9b55-f7338c50d679"
+									}
+								}
+							],
+							"id": "424542-6bed745b-0104-4f5a-ad21-c5709251e0d4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "reqres-free-v1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://reqres.in/api/users/2",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"users",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "424542-1b4787d5-e9b0-4be3-8e39-47e957d5a113"
+				},
+				{
+					"name": "Thoth (Reports)",
+					"item": [
+						{
+							"name": "GET All posts | JSONPlaceholder",
+							"id": "424542-b3182bd2-d1ea-4d0d-b085-9bcdcb48f14c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://jsonplaceholder.typicode.com/posts",
+									"protocol": "https",
+									"host": [
+										"jsonplaceholder",
+										"typicode",
+										"com"
+									],
+									"path": [
+										"posts"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "424542-3aa009d9-69a6-45a7-92e7-7737b84b4662"
+				}
+			],
+			"id": "424542-eb3e8a8b-516a-4425-aba2-9e0477c86a81"
+		}
+	]
+}
