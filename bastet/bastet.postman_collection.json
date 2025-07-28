@@ -1,8 +1,10 @@
 {
 	"info": {
-		"_postman_id": "424542-60e152bc-22d9-41d6-a301-1005c33241e4",
+		"_postman_id": "aa051122-c0ed-4306-92e2-7015012bc826",
 		"name": "TN",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "424542",
+		"_collection_link": "https://solar-zodiac-233829.postman.co/workspace/videate~06f6ff97-a468-494b-be48-c8e6aee87d11/collection/424542-aa051122-c0ed-4306-92e2-7015012bc826?action=share&source=collection_link&creator=424542"
 	},
 	"item": [
 		{
@@ -17,9 +19,8 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "11b09913-2521-4c48-b90e-391fba9096f5",
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {",
+											"pm.test(\"Status code is 200 and OK. A new hope\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
 											""
@@ -29,11 +30,10 @@
 									}
 								}
 							],
-							"id": "424542-1656cc2a-2a50-41b6-a1c3-0b5eef604742",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
 							"request": {
+								"auth": {
+									"type": "noauth"
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
@@ -53,22 +53,18 @@
 											"value": "2"
 										}
 									]
-								}
+								},
+								"description": "a new change\nbranch: bastet-onofre-1"
 							},
 							"response": []
 						}
-					],
-					"id": "424542-782d124c-ce05-4b07-b9e2-18ea5daf4f63"
+					]
 				},
 				{
 					"name": "Osiris (External Integrations)",
 					"item": [
 						{
 							"name": "GET External Setup | httpbin",
-							"id": "424542-e4176dd1-c591-47ac-8fb9-c2ffda4e2775",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -86,18 +82,13 @@
 							},
 							"response": []
 						}
-					],
-					"id": "424542-1620d3c0-ba31-43d9-aa95-84a96156eee5"
+					]
 				},
 				{
 					"name": "Ra (Core/Auth)",
 					"item": [
 						{
 							"name": "POST Login | Dummy",
-							"id": "424542-89063d89-b845-49fa-82be-ed89116d89aa",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
 							"request": {
 								"method": "POST",
 								"header": [
@@ -137,7 +128,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "8dd28249-0c31-452a-8f38-e1922800cdef",
 										"exec": [
 											"pm.test(\"Status code is 200\", function () {",
 											"    pm.response.to.have.status(200);",
@@ -154,10 +144,6 @@
 									}
 								}
 							],
-							"id": "424542-18790a27-c431-4ffd-8f10-a2772dfa3e3d",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
 							"request": {
 								"method": "GET",
 								"header": [
@@ -183,18 +169,13 @@
 							},
 							"response": []
 						}
-					],
-					"id": "424542-5e3d9d22-e444-4a09-be72-20dca8a0a1b3"
+					]
 				},
 				{
 					"name": "Thoth (Reports)",
 					"item": [
 						{
 							"name": "GET All posts | JSONPlaceholder",
-							"id": "424542-c13a54cd-b207-440b-9266-034e18314f2c",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -213,11 +194,9 @@
 							},
 							"response": []
 						}
-					],
-					"id": "424542-17a40a30-a85f-4e2f-8de9-cbc3362f1d99"
+					]
 				}
-			],
-			"id": "424542-60cdd79f-180d-4385-b370-30fcbf343bb2"
+			]
 		}
 	]
 }
