@@ -19,7 +19,11 @@
 									"script": {
 										"id": "7aaeb022-4891-4729-ab15-23c3822d1b87",
 										"exec": [
+
 											"pm.test(\"Status code is 200 and OK. Empire strikes back\", function () {",
+
+											
+
 											"    pm.response.to.have.status(200);",
 											"});",
 											""
