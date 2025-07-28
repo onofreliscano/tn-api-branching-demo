@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "848ee2d3-78c5-4ccb-b9f8-eb71568a3272",
+		"_postman_id": "aa051122-c0ed-4306-92e2-7015012bc826",
 		"name": "TN",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "424542",
-		"_collection_link": "https://solar-zodiac-233829.postman.co/workspace/videate~06f6ff97-a468-494b-be48-c8e6aee87d11/collection/424542-848ee2d3-78c5-4ccb-b9f8-eb71568a3272?action=share&source=collection_link&creator=424542"
+		"_collection_link": "https://solar-zodiac-233829.postman.co/workspace/videate~06f6ff97-a468-494b-be48-c8e6aee87d11/collection/424542-aa051122-c0ed-4306-92e2-7015012bc826?action=share&source=collection_link&creator=424542"
 	},
 	"item": [
 		{
@@ -20,7 +20,7 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test(\"Status code is 200 and OK.\", function () {",
+											"pm.test(\"Status code is 200 and OK. A new hope\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
 											""
