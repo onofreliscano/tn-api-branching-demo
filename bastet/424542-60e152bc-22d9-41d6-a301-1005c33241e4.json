@@ -9,6 +9,42 @@
 			"name": "tn-api-branching-demo",
 			"item": [
 				{
+					"name": "Bastet (Users)",
+					"item": [
+						{
+							"name": "GET User Pagination | ReqRes",
+							"id": "424542-1656cc2a-2a50-41b6-a1c3-0b5eef604742",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://reqres.in/api/users?page=2",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "424542-782d124c-ce05-4b07-b9e2-18ea5daf4f63"
+				},
+				{
 					"name": "Ra (Core/Auth)",
 					"item": [
 						{
@@ -94,42 +130,6 @@
 						}
 					],
 					"id": "424542-17a40a30-a85f-4e2f-8de9-cbc3362f1d99"
-				},
-				{
-					"name": "Bastet (Users)",
-					"item": [
-						{
-							"name": "GET User Pagination | ReqRes",
-							"id": "424542-1656cc2a-2a50-41b6-a1c3-0b5eef604742",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "https://reqres.in/api/users?page=2",
-									"protocol": "https",
-									"host": [
-										"reqres",
-										"in"
-									],
-									"path": [
-										"api",
-										"users"
-									],
-									"query": [
-										{
-											"key": "page",
-											"value": "2"
-										}
-									]
-								}
-							},
-							"response": []
-						}
-					],
-					"id": "424542-782d124c-ce05-4b07-b9e2-18ea5daf4f63"
 				},
 				{
 					"name": "Osiris (External Integrations)",
