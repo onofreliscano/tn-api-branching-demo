@@ -1,8 +1,10 @@
 {
 	"info": {
-		"_postman_id": "424542-aa051122-c0ed-4306-92e2-7015012bc826",
+		"_postman_id": "62d8cd91-04a7-401b-a246-57bcca552657",
 		"name": "TN",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "424542",
+		"_collection_link": "https://solar-zodiac-233829.postman.co/workspace/ed4dec93-2f59-4c09-8457-566ea8fbeaaa/collection/424542-62d8cd91-04a7-401b-a246-57bcca552657?action=share&source=collection_link&creator=424542"
 	},
 	"item": [
 		{
@@ -17,13 +19,8 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "7aaeb022-4891-4729-ab15-23c3822d1b87",
 										"exec": [
-
-											"pm.test(\"Status code is 200 and OK. Empire strikes back\", function () {",
-
-											
-
+											"pm.test(\"Status code is 200 and OK. Fight Club\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
 											""
@@ -33,10 +30,6 @@
 									}
 								}
 							],
-							"id": "424542-cf2945c4-213a-458e-887b-dcf44cc3e97a",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
 							"request": {
 								"auth": {
 									"type": "noauth"
@@ -65,18 +58,13 @@
 							},
 							"response": []
 						}
-					],
-					"id": "424542-79b3f11c-314b-4ea5-954d-2742daeafea1"
+					]
 				},
 				{
 					"name": "Osiris (External Integrations)",
 					"item": [
 						{
 							"name": "GET External Setup | httpbin",
-							"id": "424542-d51535ec-db1a-452b-9620-313834097138",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -94,18 +82,13 @@
 							},
 							"response": []
 						}
-					],
-					"id": "424542-46dac1dd-41ac-4c33-837d-3de154aa2829"
+					]
 				},
 				{
 					"name": "Ra (Core/Auth)",
 					"item": [
 						{
 							"name": "POST Login | Dummy",
-							"id": "424542-9aa264a5-a070-4f2a-80d7-8ce65aee796c",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
 							"request": {
 								"method": "POST",
 								"header": [
@@ -157,15 +140,10 @@
 											""
 										],
 										"type": "text/javascript",
-										"packages": {},
-										"id": "eb88c4f2-57c0-4367-af57-f266a9b5592d"
+										"packages": {}
 									}
 								}
 							],
-							"id": "424542-0fd5abae-d312-4c82-91fa-fb7796c008cc",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
 							"request": {
 								"method": "GET",
 								"header": [
@@ -191,18 +169,13 @@
 							},
 							"response": []
 						}
-					],
-					"id": "424542-45a77607-db50-4a1a-b168-72c948514fa2"
+					]
 				},
 				{
 					"name": "Thoth (Reports)",
 					"item": [
 						{
 							"name": "GET All posts | JSONPlaceholder",
-							"id": "424542-c406e07d-b905-474e-8342-6ace9283c01d",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
 							"request": {
 								"method": "GET",
 								"header": [],
@@ -221,11 +194,9 @@
 							},
 							"response": []
 						}
-					],
-					"id": "424542-11949592-f41c-42c6-8247-b128f4f4bde2"
+					]
 				}
-			],
-			"id": "424542-e42ac1e0-aaaf-42ef-bd0d-b8adc8f3f984"
+			]
 		}
 	]
 }
