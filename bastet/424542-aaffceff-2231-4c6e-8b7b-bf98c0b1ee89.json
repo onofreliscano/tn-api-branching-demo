@@ -19,7 +19,7 @@
 									"script": {
 										"id": "e48fb558-063e-4cab-a95d-2c83c7ad4ee4",
 										"exec": [
-											"pm.test(\"Status code is 200 and OK. Top Gun\", function () {",
+											"pm.test(\"Status code is 200 and OK. Quake\", function () {",
 											"    pm.response.to.have.status(200);",
 											"});",
 											""
